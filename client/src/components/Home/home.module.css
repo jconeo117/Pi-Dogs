@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.paginate{
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+.paginate_end{
+    margin-top: 20px;
+}
+
+.btn_search{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+}
+
+.cards_container{
+    background-color: #ededed;
+    width: 1000px;
+    height: 100%;
+    margin-left: 20px;
+    display: grid;
+}

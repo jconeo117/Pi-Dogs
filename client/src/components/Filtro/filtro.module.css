@@ -1,0 +1,95 @@
+
+.card {
+    width: 240px;
+    height: fit-content;
+    margin-top: 10px;
+    border-radius: 20px;
+    background: white;
+    position: sticky;
+    box-shadow: 0px 0px 15px -5px;
+    top: 155px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.selectdiv {
+    position: relative;
+    /*Don't really need this just for demo styling*/
+    
+    margin: 10px 5px;
+}
+  
+  /* IE11 hide native button (thanks Matt!) */
+select::-ms-expand {
+  display: none;
+}
+  
+.selectdiv:after {
+    font: 17px "Consolas", monospace;
+    color: #333;
+    
+    right: 11px;
+    /*Adjust for position however you want*/
+    
+    top: 18px;
+    padding: 0 0 2px;
+    border-bottom: 1px solid #999;
+    /*left line */
+    
+    position: absolute;
+    pointer-events: none;
+}
+  
+.selectdiv select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Add some styling */
+    
+    display: block;
+    width: 100%;
+    max-width: 320px;
+    height: 50px;
+    float: right;
+    margin: 5px 0px;
+    padding: 0px 24px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #333;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    -ms-word-break: normal;
+    word-break: normal;
+}
+
+
+button {
+    background-color: #eee;
+    border: none;
+    margin: 15px auto;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 10em;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+   }
+   
+   button:active {
+    color: white;
+    box-shadow: 0 0.2rem #dfd9d9;
+    transform: translateY(0.2rem);
+   }
+   
+   button:hover:not(:disabled) {
+    background: #03c4c0;
+    color: white;
+    text-shadow: 0 0.1rem #bcb4b4;
+   }
+   
+   button:disabled {
+    cursor: auto;
+    color: grey;
+   }

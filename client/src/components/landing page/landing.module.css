@@ -1,0 +1,143 @@
+
+/*-------------------------------------------------*/
+/*-----------------image container-----------------*/
+/*-------------------------------------------------*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.image_container{
+    width: 300px;
+    height: 300px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*-------------------------------------------------*/
+/*-----------------title container-----------------*/
+/*-------------------------------------------------*/
+
+.btn_shine h3{
+    padding: 5px 20px;
+    margin: 5px;
+}
+
+.btn_shine {
+    color: #fff;
+    background: linear-gradient(to right, #4d4d4d 0, #fff 10%, #4d4d4d 20%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 6s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 1px;
+}
+
+@-moz-keyframes shine {
+    0% {
+        background-position: -10px;
+    }
+    60% {
+        background-position: 180px;
+    }
+    100% {
+        background-position: 280px;
+    }
+}
+
+@-webkit-keyframes shine {
+    0% {
+        background-position: -10px;
+    }
+    60% {
+        background-position: 180px;
+    }
+    100% {
+        background-position: 280px;
+    }
+}
+
+@-o-keyframes shine {
+    0% {
+        background-position: -10px;
+    }
+    60% {
+        background-position: 180px;
+    }
+    100% {
+        background-position: 280px;
+    }
+}
+@keyframes shine {
+    0% {
+        background-position: -10px;
+    }
+    60% {
+        background-position: 180px;
+    }
+    100% {
+        background-position: 280px;
+    }
+}
+  
+/*------------------------------------------------*/
+/*---------------------btn------------------------*/
+/*------------------------------------------------*/
+.btn {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    margin-bottom: 15px;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: black;
+    background-color: white;
+   }
+   
+   .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+   }
+   
+   .btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   
+   .btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+   }
+   
+   .btn::after {
+    background-color: #fff;
+   }
+   
+   .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+   }
